@@ -1,0 +1,17 @@
+# Idea files
+.idea
+*.iml
+
+#Target files
+target
+
+# Compiled class file
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.zip
+# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+!/.mvn/wrapper/maven-wrapper.jar
+
