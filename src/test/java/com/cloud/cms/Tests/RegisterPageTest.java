@@ -34,4 +34,16 @@ public class RegisterPageTest extends BaseTest{
         registerPage.setFirstName(firstName);
         Assert.assertEquals(firstName,registerPage.getFirstNameFromInputField());
     }
+
+    //TODO:how correct make assert
+    @Test
+    public void submitRegisterFormWithMandatoryFieldFilled(){
+        registerPage.setFirstName("FirstName")
+                .setLastName("LastName")
+                .setEmailAddress("testadrress@cmscloud.com")
+                .setPassword("11111111")
+                .setConfirmPassword("11111111")
+                .submitButtonClick();
+        Assert.assertTrue(driver.getCurrentUrl().contains("Error"));
+    }
 }
