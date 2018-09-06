@@ -20,6 +20,7 @@ public class BaseTest {
 
         driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
+
     }
 
     @BeforeMethod

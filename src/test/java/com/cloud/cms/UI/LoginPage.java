@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginPage extends AbstractPage {
 
-    //TODO: it is appropriate?
     public static final String SIGN_UP_LOCATOR = "//a[contains(text(),'Sign Up')]";
 
     @FindBy(how = How.XPATH, using = SIGN_UP_LOCATOR)

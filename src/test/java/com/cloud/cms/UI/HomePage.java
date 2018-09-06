@@ -11,13 +11,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends AbstractPage {
 
-    private static final String SIGN_IN_LOCATOR = "//a[text()='Sign In']";
+    private static final String SIGN_IN_LOCATOR = /*"//a[text()='Sign In']"*/"//li/a[@href='/auth/login']";
 
     @FindBy (how = How.XPATH, using = SIGN_IN_LOCATOR)
     private WebElement signInButton;
-
-//    protected static WebDriver driver;
-//    protected static WebDriverWait wait;
 
     public static void init(WebDriver webDriver) {
         driver = webDriver;

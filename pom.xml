@@ -45,13 +45,14 @@
     <pluginManagement>
       <plugins>
         <plugin>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.20.1</version>
-            <configuration>
-                <includes>
-                    <include>**/Tests/*.java</include>
-                </includes>
-            </configuration>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-failsafe-plugin</artifactId>
+          <version>2.22.0</version>
+          <configuration>
+            <includes>
+              <include>**/Tests/*.java</include>
+            </includes>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
